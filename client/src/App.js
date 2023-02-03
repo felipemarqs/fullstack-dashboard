@@ -10,6 +10,7 @@ import Layout from 'scenes/layout'
 import Dashboard from 'scenes/dashboard'
 import Products from 'scenes/products'
 import Costumers from 'scenes/costumers'
+import Transactions from 'scenes/transactions'
 
 
 
@@ -29,6 +30,7 @@ function App() {
                     <Route path="dashboard" element={<Dashboard/>}/>
                     <Route path='/products' element={<Products/>}/>
                     <Route path='/costumers' element={<Costumers/>}/>
+                    <Route path='/Transactions' element={<Transactions/>}/>
 
                 </Route>
              </Routes>
