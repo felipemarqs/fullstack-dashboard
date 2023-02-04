@@ -11,7 +11,8 @@ import Dashboard from 'scenes/dashboard'
 import Products from 'scenes/products'
 import Costumers from 'scenes/costumers'
 import Transactions from 'scenes/transactions'
-
+import Geography from 'scenes/geography'
+import Overview from 'scenes/overview'
 
 
 function App() {
@@ -30,8 +31,9 @@ function App() {
                     <Route path="dashboard" element={<Dashboard/>}/>
                     <Route path='/products' element={<Products/>}/>
                     <Route path='/costumers' element={<Costumers/>}/>
-                    <Route path='/Transactions' element={<Transactions/>}/>
-
+                    <Route path='/transactions' element={<Transactions/>}/>
+                    <Route path='/geography' element={<Geography/>}/>
+                    <Route path='/overview' element={<Overview/>}/>
                 </Route>
              </Routes>
           </ThemeProvider>
