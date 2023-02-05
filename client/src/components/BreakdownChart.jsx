@@ -7,7 +7,7 @@ import { textAlign } from "@mui/system";
 const BreakdownChart = ({ isDashboard = false }) => {
   const { data, isLoading } = useGetSalesQuery();
   const theme = useTheme();
-  console.log(data.salesByCategory);
+
 
   if (!data || isLoading) {
     return "Loading...";

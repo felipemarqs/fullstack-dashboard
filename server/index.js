@@ -17,6 +17,7 @@ import User from "./models/User.js";
 import Product from "./models/Product.js";
 import ProductStat from "./models/ProductStat.js";
 import OverallStat from "./models/OverallStat.js";
+import AffiliateStat from "./models/AffiliateStat.js";
 //Data Imports
 
 import {
@@ -24,6 +25,7 @@ import {
   dataProduct,
   dataProductStat,
   dataOverallStat,
+  dataAffiliateStat
 } from "./data/index.js";
 
 /*Config*/
@@ -57,7 +59,7 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => console.log(`Server Port ${PORT}`));
-
+    //AffiliateStat.insertMany(dataAffiliateStat) 
     //User.insertMany(dataUser)
     //Product.insertMany(dataProduct)
     //ProductStat.insertMany(dataProductStat)
